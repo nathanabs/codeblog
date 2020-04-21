@@ -26,7 +26,7 @@ public class CodeblogController {
 	public ModelAndView getPosts() {
 		ModelAndView mv = new ModelAndView("posts");
 		
-		List<Post> posts = codeblogService.findAll();
+		List<Post> posts = codeblogService.findByOrderByIdDesc();
 		mv.addObject("posts", posts);
 		
 		return mv;

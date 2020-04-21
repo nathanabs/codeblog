@@ -18,11 +18,8 @@
 	</head>
 
 	<body>
-		<header>
-			<nav class="navbar fixed-top navbar-dark bg-dark">
-				<span class="navbar-brand mb-0 h1" style="font-weight: bold;">CodeBlog</span>
-				<a href="/newPost" class="btn btn-primary" role="button">Novo Post</a>
-			</nav>
+		<header th:replace="fragments/header :: header">
+			<div>header</div>
 		</header>
 		
 		<main>

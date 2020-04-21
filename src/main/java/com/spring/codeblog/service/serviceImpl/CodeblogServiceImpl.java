@@ -30,4 +30,9 @@ public class CodeblogServiceImpl implements CodeblogService {
 		return codeblogRep.save(post);
 	}
 
+	@Override
+	public List<Post> findByOrderByIdDesc() {
+		return codeblogRep.findByOrderByIdDesc();
+	}
+
 }
